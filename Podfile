@@ -9,6 +9,7 @@ target 'EarlyEducation' do
   pod 'RxCocoa', '~> 3.0.0-beta.1'
   pod 'SnapKit', '~> 3.0.0'
   pod 'XCGLogger', '~> 4.0.0'
+  pod 'Kingfisher', '~> 3.1.4'
   # Pods for EarlyEducation
 
   target 'EarlyEducationTests' do

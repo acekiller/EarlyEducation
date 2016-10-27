@@ -27,11 +27,6 @@ class EECenterViewController: UIViewController {
         Alamofire.request("https://www.baidu.com").responseData { (data : DataResponse<Data>) in
             print(data)
         }
-        log.verbose("A verbose message, usually useful when working on a specific problem")
-        log.debug("A debug message")
-        log.info("An info message, probably useful to power users looking in console.app")
-        log.error("An error occurred, but it's recoverable, just info about what happened")
-        log.severe("A severe error occurred, we are likely about to crash now")
     }
 
     override func didReceiveMemoryWarning() {

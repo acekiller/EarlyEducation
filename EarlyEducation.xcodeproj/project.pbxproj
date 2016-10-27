@@ -22,6 +22,8 @@
 		185E8CEF1DB8C82100EF6587 /* EECenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E8CEE1DB8C82100EF6587 /* EECenterViewController.swift */; };
 		18603C201DC080BA00FBAD16 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18603C1F1DC080BA00FBAD16 /* NetworkService.swift */; };
 		18603C211DC080BA00FBAD16 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18603C1F1DC080BA00FBAD16 /* NetworkService.swift */; };
+		18CFD0231DC1D4220048B481 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CFD0221DC1D4220048B481 /* NetworkServiceTests.swift */; };
+		18CFD0251DC1D8B90048B481 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CFD0241DC1D8B90048B481 /* XCTest.framework */; };
 		34199D1591B72E7BCD1A8CBF /* Pods_EarlyEducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF732EBF6E063D46DB74F8C /* Pods_EarlyEducationUITests.framework */; };
 		6237425C225FA33E6677B72E /* Pods_EarlyEducation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBD398547333BE54786D665 /* Pods_EarlyEducation.framework */; };
 		EE9F2AA2D54AA3E02C12F69A /* Pods_EarlyEducationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA760F95BFB9D9A8E518081E /* Pods_EarlyEducationTests.framework */; };
@@ -80,6 +82,8 @@
 		185E8CEE1DB8C82100EF6587 /* EECenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EECenterViewController.swift; sourceTree = "<group>"; };
 		18603C1F1DC080BA00FBAD16 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		18AB79B932F96AA85C39F4EB /* Pods-EarlyEducationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyEducationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyEducationUITests/Pods-EarlyEducationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		18CFD0221DC1D4220048B481 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		18CFD0241DC1D8B90048B481 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1B1DDBE4C3AD641BEED52958 /* Pods-EarlyEducationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyEducationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyEducationTests/Pods-EarlyEducationTests.release.xcconfig"; sourceTree = "<group>"; };
 		498491E68FF23A6E89865644 /* Pods-EarlyEducation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyEducation.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyEducation/Pods-EarlyEducation.release.xcconfig"; sourceTree = "<group>"; };
 		5EEA684F44E78757924769AB /* Pods-EarlyEducationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarlyEducationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarlyEducationUITests/Pods-EarlyEducationUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CFD0251DC1D8B90048B481 /* XCTest.framework in Frameworks */,
 				EE9F2AA2D54AA3E02C12F69A /* Pods_EarlyEducationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +186,7 @@
 		185E8CCB1DB8C32700EF6587 /* EarlyEducationTests */ = {
 			isa = PBXGroup;
 			children = (
+				18CFD01E1DC1D3B90048B481 /* Service */,
 				185E8CCC1DB8C32700EF6587 /* EarlyEducationTests.swift */,
 				185E8CCE1DB8C32700EF6587 /* Info.plist */,
 			);
@@ -246,9 +252,26 @@
 			path = HTTPService;
 			sourceTree = "<group>";
 		};
+		18CFD01E1DC1D3B90048B481 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				18CFD01F1DC1D3B90048B481 /* HTTPService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		18CFD01F1DC1D3B90048B481 /* HTTPService */ = {
+			isa = PBXGroup;
+			children = (
+				18CFD0221DC1D4220048B481 /* NetworkServiceTests.swift */,
+			);
+			path = HTTPService;
+			sourceTree = "<group>";
+		};
 		85CEAF1F4BE9F846B288987F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18CFD0241DC1D8B90048B481 /* XCTest.framework */,
 				6FBD398547333BE54786D665 /* Pods_EarlyEducation.framework */,
 				AA760F95BFB9D9A8E518081E /* Pods_EarlyEducationTests.framework */,
 				6EF732EBF6E063D46DB74F8C /* Pods_EarlyEducationUITests.framework */,
@@ -539,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18603C211DC080BA00FBAD16 /* NetworkService.swift in Sources */,
+				18CFD0231DC1D4220048B481 /* NetworkServiceTests.swift in Sources */,
 				185E8CCD1DB8C32700EF6587 /* EarlyEducationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ECBriefCell: UITableViewCell {
     lazy var iconView = UIImageView()
@@ -31,7 +32,8 @@ class ECBriefCell: UITableViewCell {
     }
     
     func updateCell(briefItem : ECBriefProtocol?) {
-        //
+        titleLabel.text = briefItem?.title
+        briefLabel.text = briefItem?.detailDescription
     }
 
 }
