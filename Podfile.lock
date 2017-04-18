@@ -1,9 +1,10 @@
 PODS:
   - Alamofire (4.0.1)
   - Kingfisher (3.1.4)
-  - RxCocoa (3.0.0):
+  - ModelMapper (6.0.0)
+  - RxCocoa (3.0.1):
     - RxSwift (~> 3.0)
-  - RxSwift (3.0.0)
+  - RxSwift (3.0.1)
   - SnapKit (3.0.2)
   - XCGLogger (4.0.0):
     - XCGLogger/Core (= 4.0.0)
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.0.0)
   - Kingfisher (~> 3.1.4)
+  - ModelMapper (~> 6.0.0)
   - RxCocoa (~> 3.0.0-beta.1)
   - RxSwift (~> 3.0.0-beta.1)
   - SnapKit (~> 3.0.0)
@@ -20,11 +22,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   Kingfisher: 6c67e3e57f2d81a9cfdfa25052cd86f33ceac9bb
-  RxCocoa: 0a2f3ae381cf16f4021a4cee7a4420f83058a965
-  RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
+  ModelMapper: 3596a82f26c43491f6a8d3a00bcdba6ba0e62a93
+  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
 
-PODFILE CHECKSUM: 68227b2b395cd4cfd8d6adbc6ac6abe27489ee02
+PODFILE CHECKSUM: f24902ca2037f369076239b96cabe3d3f6d68800
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

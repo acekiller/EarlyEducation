@@ -1,6 +1,0 @@
-framework module Pods_EarlyEducation {
-  umbrella header "Pods-EarlyEducation-umbrella.h"
-
-  export *
-  module * { export * }
-}
